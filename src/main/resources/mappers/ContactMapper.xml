@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.or.dgit.yujin.mapper.ContactMapper">	
+	<insert id="insertContact" parameterType="ContactVO">
+		insert into contact(cname, cemail, ccontent, cdate) values(#{cname}, #{cemail}, #{ccontent}, now());
+	</insert>
+	<update id="updateContact" parameterType="ContactVO">
+		update contact set cname = #{cname}, cemail=#{cemail}, ccontent = #{ccontent} where cno = #{cno};
+	</update>
+	<delete id="deleteContact" parameterType="int">
+		delete from contact where cno=#{cno}
+	</delete>
+	<select id="selectAllContact" resultType="ContactVO">
+		select cno, cname, cemail,ccontent, cdate from contact order by cno desc
+	</select>
+	<select id="selectContactByCno" parameterType="int" resultType="ContactVO">
+		select cno, cname, cemail, ccontent, cdate from contact where cno = #{cno}
+	</select>
+</mapper>
