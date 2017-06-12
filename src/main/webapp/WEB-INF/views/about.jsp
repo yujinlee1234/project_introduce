@@ -35,20 +35,20 @@
                             </div>
                         </div>
                     </li>
-                    <%-- <li>
+                    <li>
                         <div class="timeline-image" id="timeline-dgit">
                             <img class="img-circle img-responsive" src="${pageContext.request.contextPath }/resources/img/about/certification2.png" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>May 2017</h4>
-                                <h4 class="subheading">정보 처리 기사</h4>
+                                <h4 class="subheading">정보 처리 기사 취득</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted"></p>
                             </div>
                         </div>
-                    </li> --%>
+                    </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image" id="timeline-ku">
                             <img class="img-circle img-responsive" src="${pageContext.request.contextPath }/resources/img/about/UI_Mark.jpg" alt="">
@@ -74,6 +74,20 @@
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">인문계, 이과</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li  class="timeline-inverted">
+                        <div class="timeline-image" id="timeline-gg">
+                            <img class="img-circle img-responsive" src="${pageContext.request.contextPath }/resources/img/about/gumi_girls.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 1990</h4>
+                                <h4 class="subheading"></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"></p>
                             </div>
                         </div>
                     </li>
